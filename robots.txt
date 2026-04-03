@@ -1,0 +1,9 @@
+# Bed & Way — robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://bedandway.com/sitemap.xml
