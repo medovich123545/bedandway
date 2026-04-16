@@ -19,6 +19,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="sitemap" type="application/xml" href="https://bedandway.com/sitemap.xml">
+  <!-- Preload LCP image for faster first paint -->
+  <link rel="preload" as="image" href="images/Faro-de-Cap-Spartel.webp" fetchpriority="high">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Guía Tánger 2026 — Hoteles, Riads, Restaurantes y Ferry | Bed &amp; Way">
@@ -45,8 +47,6 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <!-- Fonts — non-blocking with display=swap -->
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Tenor+Sans&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Jost:wght@200;300;400&display=swap"
@@ -56,14 +56,6 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Tenor+Sans&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Jost:wght@200;300;400&display=swap"
       rel="stylesheet">
   </noscript>
-  <!-- Font Awesome — deferred -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous"
-    media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
-  </noscript>
-  <!-- GSAP — deferred -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">{
   "@context":"https://schema.org",
@@ -394,7 +386,7 @@
     #burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0) }
     #burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); background: var(--gold2); width: 28px }
 
-    /* ===== HERO SECTION — REWRITTEN ===== */
+    /* ===== HERO SECTION ===== */
     .hero-wrapper {
       position: relative;
       width: 100%;
@@ -516,7 +508,6 @@
     .hi-2 { background-image: url("images/hoteles-lujo-vista-mar-tanger.webp") }
     .hi-3 { background-image: url("images/restaurantes-gastronomia-tanger-medina.webp") }
     .hi-4 { background-image: url("images/riad-patio-interior-medina-tanger.webp") }
-    .hi-5 { background-image: url("images/souk-bara-twilight-tanger-medina.webp") }
 
     .slide-counter {
       position: absolute;
@@ -576,7 +567,7 @@
       50% { opacity: .7; transform: translateX(-50%) translateY(4px) }
     }
 
-    /* ===== PARTNERS BAND — premium layout ===== */
+    /* ===== PARTNERS BAND ===== */
     .partners-band {
       position: relative;
       padding: 3.5rem 6vw;
@@ -790,7 +781,7 @@
       margin-top: .6rem
     }
 
-    /* ===== EDITORIAL SELECTION — replaces old "verified/trust" section ===== */
+    /* ===== EDITORIAL SELECTION ===== */
     .editorial-section {
       background: var(--ink2);
       position: relative;
@@ -1768,7 +1759,7 @@
     <button id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 
-  <!-- ===== HERO — rewritten slider ===== -->
+  <!-- ===== HERO ===== -->
   <div class="hero-wrapper" role="banner">
     <main id="heroMain">
       <article id="hero-1" class="hero-active" data-slide="1">
@@ -1806,14 +1797,6 @@
         <div class="hero-image hi-4" role="img"
           aria-label="Patio interior de un riad tradicional en la Medina de Tánger"></div>
       </article>
-      <article id="hero-5" data-slide="5">
-        <div class="hero-info">
-          <p class="hero-kicker">Descubre el arte ancestral del</p>
-          <h2 class="hero-title">Zellige</h2>
-          <p class="hero-sub">Artesanía, talleres y cultura viva en la Medina de Tánger</p>
-        </div>
-        <div class="hero-image hi-5" role="img" aria-label="Taller de artesanía de zellige en Tánger"></div>
-      </article>
     </main>
     <div class="slide-counter">
       <div class="slide-dots">
@@ -1821,7 +1804,6 @@
         <div class="dot" data-slide="2"></div>
         <div class="dot" data-slide="3"></div>
         <div class="dot" data-slide="4"></div>
-        <div class="dot" data-slide="5"></div>
       </div>
     </div>
     <div class="hero-scroll-cta"><span>Descubrir</span><svg viewBox="0 0 16 16">
@@ -1898,7 +1880,7 @@
 
   <div class="section-divider"></div>
 
-  <!-- ===== 3. EDITORIAL SELECTION — replaces old "verified / trust me" section ===== -->
+  <!-- ===== 3. EDITORIAL SELECTION ===== -->
   <section class="editorial-section" aria-label="Selección editorial">
     <div class="editorial-header reveal">
       <p class="section-kicker">Selección editorial</p>
@@ -2073,11 +2055,15 @@
         <div class="cat" data-sub="sub-hotels"><span class="cat-num">02</span><span class="cat-label">Hoteles y Riads</span><span class="cat-arrow"></span></div>
         <div class="cat" data-sub="sub-resto"><span class="cat-num">03</span><span class="cat-label">Restaurantes</span><span class="cat-arrow"></span></div>
         <div class="cat" data-sub="sub-transp"><span class="cat-num">04</span><span class="cat-label">Transporte</span><span class="cat-arrow"></span></div>
-        <div class="cat" data-sub="sub-about"><span class="cat-num">05</span><span class="cat-label">Info y Legal</span><span class="cat-arrow"></span></div>
       </div>
       <div class="menu-foot"><a
           href="https://www.booking.com/searchresults.html?ss=Tanger&amp;aid=304142&amp;label=bedandway-index-menu"
-          target="_blank" rel="nofollow sponsored" class="book-btn"><i class="fas fa-bed" aria-hidden="true"></i>
+          target="_blank" rel="nofollow sponsored" class="book-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 17V7a2 2 0 012-2h4a2 2 0 012 2v4h10a2 2 0 012 2v4"/>
+            <line x1="2" y1="17" x2="22" y2="17"/>
+            <circle cx="7" cy="11" r="2"/>
+          </svg>
           Reservar en Booking.com</a>
         <p class="menu-copy">Bed &amp; Way &middot; Tánger &middot; 2026</p>
         <div class="menu-legal"><a href="aviso-legal.html">Aviso Legal</a><a href="politica-de-privacidad.html">Privacidad</a><a href="politica-de-cookies.html">Cookies</a><a href="divulgacion-afiliados.html">Afiliados</a></div>
@@ -2106,15 +2092,6 @@
         <h3 class="sub-h">Llegar y <em>Moverse</em></h3>
         <div class="sub-links"><a href="guia-ferry-tarifa-tanger-2026.html" class="sub-link">Ferry Tarifa&ndash;Tánger 2026</a><a href="como-moverse-en-tanger-2026.html" class="sub-link">Cómo Moverse en Tánger</a><a href="alquiler-coches-seguro-tanger-2026.html" class="sub-link">Alquiler Coches y Seguro</a></div>
       </div>
-      <div class="sub" id="sub-about">
-        <p class="sub-kicker">Bed &amp; Way</p>
-        <h3 class="sub-h">Sobre <em>Nosotros</em></h3>
-        <div class="sub-links"><a href="sobre-nosotros.html" class="sub-link">Quiénes Somos</a><a href="contacto.html" class="sub-link">Contacto</a><a href="divulgacion-afiliados.html" class="sub-link">Divulgación de Afiliados</a><a href="sitemap.html" class="sub-link">Mapa del Sitio</a></div>
-        <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(184,147,90,.1)">
-          <p style="font-family:'Jost',sans-serif;font-size:.52rem;letter-spacing:4px;text-transform:uppercase;color:var(--stone);margin-bottom:.8rem">Legal</p>
-          <div class="sub-links"><a href="aviso-legal.html" class="sub-link">Aviso Legal</a><a href="politica-de-privacidad.html" class="sub-link">Política de Privacidad</a><a href="politica-de-cookies.html" class="sub-link">Política de Cookies</a></div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -2131,7 +2108,7 @@
 
   <script>
     /* ===== CUSTOM CURSOR ===== */
-    (function () { var cD = document.getElementById('cDot'), cR = document.getElementById('cRing'); if (!cD || !matchMedia('(hover:hover)').matches) { if (cD) cD.style.display = 'none'; if (cR) cR.style.display = 'none'; return; } var mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; cD.style.left = mx + 'px'; cD.style.top = my + 'px'; }); (function l() { rx += (mx - rx) * .12; ry += (my - ry) * .12; cR.style.left = rx + 'px'; cR.style.top = ry + 'px'; requestAnimationFrame(l); })(); document.querySelectorAll('a,button,.cat,.dot,.pb-logo,.stat-card,.testimonial-card,.trust-badge-card,.method-item,.editorial-card').forEach(function (el) { el.addEventListener('mouseenter', function () { document.body.classList.add('ch') }); el.addEventListener('mouseleave', function () { document.body.classList.remove('ch') }); }); })();
+    (function () { var cD = document.getElementById('cDot'), cR = document.getElementById('cRing'); if (!cD || !matchMedia('(hover:hover)').matches) { if (cD) cD.style.display = 'none'; if (cR) cR.style.display = 'none'; return; } var mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; cD.style.left = mx + 'px'; cD.style.top = my + 'px'; }); (function l() { rx += (mx - rx) * .12; ry += (my - ry) * .12; cR.style.left = rx + 'px'; cR.style.top = ry + 'px'; requestAnimationFrame(l); })(); document.querySelectorAll('a,button,.cat,.dot,.pb-logo,.stat-card,.testimonial-card,.editorial-card').forEach(function (el) { el.addEventListener('mouseenter', function () { document.body.classList.add('ch') }); el.addEventListener('mouseleave', function () { document.body.classList.remove('ch') }); }); })();
 
     /* ===== SMART NAV ===== */
     (function () {
@@ -2155,23 +2132,27 @@
 
     /* ===== MENU ===== */
     (function () {
-      var burger = document.getElementById('burger'), menu = document.getElementById('menu'), veil = document.getElementById('veil'), closeB = document.getElementById('closeBtn'); if (!burger || !menu) return; var isOpen = false; if (typeof gsap !== 'undefined') gsap.set('.cat', { opacity: 0, x: 20 }); function oM() { isOpen = true; burger.classList.add('open'); burger.setAttribute('aria-expanded', 'true'); menu.classList.add('open'); veil.classList.add('show'); document.body.style.overflow = 'hidden'; if (typeof gsap !== 'undefined') { gsap.to('.cat', { opacity: 1, x: 0, duration: .6, ease: 'expo.out', stagger: .09, delay: .35 }); } else { document.querySelectorAll('.cat').forEach(function (c) { c.style.opacity = '1'; c.style.transform = 'translateX(0)'; }); } } function cM() { isOpen = false; burger.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); menu.classList.remove('open'); veil.classList.remove('show'); document.body.style.overflow = ''; if (typeof gsap !== 'undefined') gsap.set('.cat', { opacity: 0, x: 20 }); } burger.addEventListener('click', function () { isOpen ? cM() : oM(); }); closeB.addEventListener('click', cM); veil.addEventListener('click', cM); document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen) cM(); });
-      var cats = document.querySelectorAll('.cat'), subs = document.querySelectorAll('.sub'); function act(cat) { cats.forEach(function (c) { c.classList.remove('active'); }); cat.classList.add('active'); subs.forEach(function (s) { s.classList.remove('active'); }); var t = document.getElementById(cat.dataset.sub); if (!t) return; t.classList.add('active'); if (typeof gsap !== 'undefined') { gsap.fromTo(t.querySelectorAll('.sub-link,.cta-a,.cta-b'), { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: .42, ease: 'expo.out', stagger: .022 }); gsap.fromTo(t.querySelectorAll('.sub-kicker,.sub-h'), { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: .38, ease: 'expo.out', stagger: .05 }); } } cats.forEach(function (c) { c.addEventListener('mouseenter', function () { act(c); }); c.addEventListener('click', function () { act(c); }); });
+      var burger = document.getElementById('burger'), menu = document.getElementById('menu'), veil = document.getElementById('veil'), closeB = document.getElementById('closeBtn'); if (!burger || !menu) return; var isOpen = false;
+      function oM() { isOpen = true; burger.classList.add('open'); burger.setAttribute('aria-expanded', 'true'); menu.classList.add('open'); veil.classList.add('show'); document.body.style.overflow = 'hidden'; document.querySelectorAll('.cat').forEach(function (c, i) { c.style.transition = 'opacity .5s ease ' + (0.35 + i * 0.08) + 's, transform .5s cubic-bezier(.16,1,.3,1) ' + (0.35 + i * 0.08) + 's'; c.style.opacity = '1'; c.style.transform = 'translateX(0)'; }); }
+      function cM() { isOpen = false; burger.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); menu.classList.remove('open'); veil.classList.remove('show'); document.body.style.overflow = ''; document.querySelectorAll('.cat').forEach(function (c) { c.style.transition = 'none'; c.style.opacity = '0'; c.style.transform = 'translateX(20px)'; }); }
+      document.querySelectorAll('.cat').forEach(function (c) { c.style.opacity = '0'; c.style.transform = 'translateX(20px)'; });
+      burger.addEventListener('click', function () { isOpen ? cM() : oM(); }); closeB.addEventListener('click', cM); veil.addEventListener('click', cM); document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen) cM(); });
+      var cats = document.querySelectorAll('.cat'), subs = document.querySelectorAll('.sub');
+      function act(cat) { cats.forEach(function (c) { c.classList.remove('active'); }); cat.classList.add('active'); subs.forEach(function (s) { s.classList.remove('active'); }); var t = document.getElementById(cat.dataset.sub); if (!t) return; t.classList.add('active'); }
+      cats.forEach(function (c) { c.addEventListener('mouseenter', function () { act(c); }); c.addEventListener('click', function () { act(c); }); });
     })();
 
-    /* ===== HERO SLIDER — REWRITTEN (robust, no yoyo, clean transitions) ===== */
+    /* ===== HERO SLIDER ===== */
     (function () {
       var slides = document.querySelectorAll('#heroMain article');
       var dots = document.querySelectorAll('.dot');
       var total = slides.length;
       var current = 0;
-      var interval = 5000; // 5 seconds per slide
+      var interval = 5000;
       var timer;
 
       function goTo(index) {
-        // Remove active from current
         slides[current].classList.remove('hero-active');
-        // Reset text animations on leaving slide
         var leavingTexts = slides[current].querySelectorAll('.hero-kicker, h1, .hero-title, .hero-sub');
         leavingTexts.forEach(function(el) {
           el.style.opacity = '0';
@@ -2179,10 +2160,8 @@
           el.style.animation = 'none';
         });
 
-        // Set new current
         current = index;
 
-        // Reset incoming text elements so animation replays
         var incomingTexts = slides[current].querySelectorAll('.hero-kicker, h1, .hero-title, .hero-sub');
         incomingTexts.forEach(function(el) {
           el.style.opacity = '';
@@ -2190,10 +2169,8 @@
           el.style.animation = '';
         });
 
-        // Activate new slide
         slides[current].classList.add('hero-active');
 
-        // Update dots
         dots.forEach(function(d, i) {
           d.classList.toggle('active', i === current);
         });
@@ -2208,16 +2185,14 @@
         timer = setInterval(next, interval);
       }
 
-      // Dot click navigation
       dots.forEach(function(dot, i) {
         dot.addEventListener('click', function() {
           if (i === current) return;
           goTo(i);
-          startAutoplay(); // Reset timer on manual nav
+          startAutoplay();
         });
       });
 
-      // Start
       startAutoplay();
     })();
 
