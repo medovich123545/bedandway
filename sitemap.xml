@@ -1,82 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- HOMEPAGE -->
+  <!-- PAGE PRINCIPALE -->
   <url>
     <loc>https://bedandway.com/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://bedandway.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bedandway.com/"/>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://bedandway.com/images/cap-spartel-faro-tanger-panorama.webp</image:loc>
-      <image:title>Faro de Cap Spartel — Tánger</image:title>
-    </image:image>
   </url>
 
-  <!-- GUÍAS PRÁCTICAS -->
+  <!-- GUIDES PRINCIPALES -->
   <url>
     <loc>https://bedandway.com/que-ver-en-tanger-guia-turistica-2026.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://bedandway.com/guia-ferry-tarifa-tanger-2026.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bedandway.com/documentos-entrar-marruecos-desde-espana-2026.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://bedandway.com/internet-dinero-tanger-2026.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://bedandway.com/como-moverse-en-tanger-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://bedandway.com/vpn-internet-marruecos-2026.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bedandway.com/consejos-seguridad-tanger-marruecos-2026.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://bedandway.com/documentos-entrar-marruecos-desde-espana-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- HOTELES Y RIADS -->
   <url>
-    <loc>https://bedandway.com/mejores-hoteles-vista-mar-tanger.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://bedandway.com/consejos-seguridad-tanger-marruecos-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- MONETIZACIÓN -->
+  <url>
+    <loc>https://bedandway.com/alquiler-coches-seguro-tanger-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://bedandway.com/top-sea-view-hotels-tangier.html</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://bedandway.com/internet-dinero-tanger-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+ <url>
+    <loc>https://bedandway.com/vpn-internet-marruecos-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+</url>
+
+  <!-- HOTELES -->
   <url>
-    <loc>https://bedandway.com/guia-mejores-riads-tanger-2026.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://bedandway.com/mejores-hoteles-vista-mar-tanger.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+
   <url>
     <loc>https://bedandway.com/hoteles-baratos-tanger-2026.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://bedandway.com/guia-mejores-riads-tanger-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -84,78 +93,59 @@
   <!-- RESTAURANTES -->
   <url>
     <loc>https://bedandway.com/donde-comer-tanger-restaurantes-2026.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bedandway.com/donde-comer-barato-tanger-2026.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- TRANSPORTE -->
   <url>
-    <loc>https://bedandway.com/como-moverse-en-tanger-2026.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bedandway.com/alquiler-coches-seguro-tanger-2026.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bedandway.com/transporte-tanger-2026.html</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://bedandway.com/donde-comer-barato-tanger-2026.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- INFO & LEGAL -->
+  <!-- CORPORATIVO -->
   <url>
     <loc>https://bedandway.com/sobre-nosotros.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://bedandway.com/contacto.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
+  <!-- LEGALES -->
   <url>
-    <loc>https://bedandway.com/divulgacion-afiliados.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <loc>https://bedandway.com/aviso-legal.html</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  <url>
-    <loc>https://bedandway.com/aviso-legal.html</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
+
   <url>
     <loc>https://bedandway.com/politica-de-privacidad.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://bedandway.com/politica-de-cookies.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
+
   <url>
-    <loc>https://bedandway.com/sitemap.html</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://bedandway.com/divulgacion-afiliados.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
