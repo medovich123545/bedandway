@@ -22,7 +22,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="sitemap" type="application/xml" href="https://bedandway.com/sitemap.xml">
 
-    <!-- ✅ Preload LCP image for faster first paint -->
     <link rel="preload" as="image" href="images/alquiler-coche-tanger-carretera-marruecos.webp" fetchpriority="high">
 
     <!-- Open Graph -->
@@ -71,6 +70,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 
+    <!-- Article Schema -->
     <script type="application/ld+json">{
         "@context":"https://schema.org",
         "@type":"Article",
@@ -89,17 +89,28 @@
         "keywords":"alquiler coches Tánger, DiscoverCars Marruecos, EKTA insurance, conducir Marruecos, rutas Chefchaouen"
     }</script>
 
+    <!-- ✅ FIXED Breadcrumb (2 levels only) -->
     <script type="application/ld+json">{
         "@context":"https://schema.org",
         "@type":"BreadcrumbList",
         "@id":"https://bedandway.com/alquiler-coches-seguro-tanger-2026.html#breadcrumb",
         "itemListElement":[
-            {"@type":"ListItem","position":1,"name":"Inicio","item":"https://bedandway.com/"},
-            {"@type":"ListItem","position":2,"name":"Transporte Tánger","item":"https://bedandway.com/transporte-tanger-2026.html"},
-            {"@type":"ListItem","position":3,"name":"Alquiler Coches y Seguro","item":"https://bedandway.com/alquiler-coches-seguro-tanger-2026.html"}
+            {
+                "@type":"ListItem",
+                "position":1,
+                "name":"Inicio",
+                "item":"https://bedandway.com/"
+            },
+            {
+                "@type":"ListItem",
+                "position":2,
+                "name":"Alquiler Coches y Seguro",
+                "item":"https://bedandway.com/alquiler-coches-seguro-tanger-2026.html"
+            }
         ]
     }</script>
 
+    <!-- FAQ Schema -->
     <script type="application/ld+json">{
         "@context":"https://schema.org",
         "@type":"FAQPage",
