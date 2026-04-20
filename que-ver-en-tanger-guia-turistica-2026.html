@@ -27,6 +27,8 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="sitemap" type="application/xml" href="https://bedandway.com/sitemap.xml">
+  
+    <link rel="preload" as="image" href="images/zoco-medina-tanger-especias-telas.webp" fetchpriority="high">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
@@ -2577,9 +2579,10 @@
     <div class="ambient-strip" id="ambStrip">
         <div class="as-fade-l"></div>
         <div class="as-fade-r"></div>
-        <div class="ambient-track" id="ambTrack">
+     <div class="ambient-track" id="ambTrack">
+            <!-- ORIGINAUX -->
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/calles-blancas-kasbah-tanger-estrecho.webp" alt="Kasbah">
+                    src="images/calles-blancas-kasbah-tanger-estrecho.webp" alt="Kasbah" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">01</span>
                     <div class="ambient-panel-label">Siglo XVII</div>
@@ -2587,7 +2590,7 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg" src="images/zoco-medina-tanger-especias-telas.webp"
-                    alt="Medina">
+                    alt="Medina" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">02</span>
                     <div class="ambient-panel-label">Zoco</div>
@@ -2595,27 +2598,24 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/cafe-hafa-tanger-terraza-estrecho-gibraltar.webp" alt="Hafa">
+                    src="images/cafe-hafa-tanger-terraza-estrecho-gibraltar.webp" alt="Hafa" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">03</span>
                     <div class="ambient-panel-label">1921</div>
                     <h3 class="ambient-panel-title">Café <em>Hafa</em></h3>
                 </div>
             </div>
-           <div class="ambient-panel">
-  <img class="ambient-panel-bg"
-       src="images/souk-bara-tanger-marruecos-noche-cultura-turismo.webp"
-       alt="Souk Bara en Tánger de noche, plaza animada con ambiente cultural y turístico en Marruecos">
-  <div class="ambient-panel-ov"></div>
-  <div class="ambient-panel-ct">
-    <span class="ambient-panel-num">04</span>
-    <div class="ambient-panel-label">Centro</div>
-    <h3 class="ambient-panel-title">Souk <em>Bara</em></h3>
-  </div>
-</div>
+            <div class="ambient-panel"><img class="ambient-panel-bg"
+                    src="images/souk-bara-tanger-marruecos-noche-cultura-turismo.webp"
+                    alt="Souk Bara en Tánger de noche, plaza animada con ambiente cultural y turístico en Marruecos" loading="lazy">
+                <div class="ambient-panel-ov"></div>
+                <div class="ambient-panel-ct"><span class="ambient-panel-num">04</span>
+                    <div class="ambient-panel-label">Centro</div>
+                    <h3 class="ambient-panel-title">Souk <em>Bara</em></h3>
+                </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/cap-spartel-acantilados-atlantico-mediterraneo.webp" alt="Spartel">
+                    src="images/cap-spartel-acantilados-atlantico-mediterraneo.webp" alt="Spartel" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">05</span>
                     <div class="ambient-panel-label">2 Mares</div>
@@ -2623,7 +2623,7 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/grutas-hercules-abertura-mapa-africa-mar.webp" alt="Hércules">
+                    src="images/grutas-hercules-abertura-mapa-africa-mar.webp" alt="Hércules" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">06</span>
                     <div class="ambient-panel-label">Mitología</div>
@@ -2631,15 +2631,17 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/marina-puerto-moderno-tanger-yates.webp" alt="Marina">
+                    src="images/marina-puerto-moderno-tanger-yates.webp" alt="Marina" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">07</span>
                     <div class="ambient-panel-label">Puerto</div>
                     <h3 class="ambient-panel-title">La <em>Marina</em></h3>
                 </div>
             </div>
+
+            <!-- DUPLICATION (scroll infini) -->
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/calles-blancas-kasbah-tanger-estrecho.webp" alt="">
+                    src="images/calles-blancas-kasbah-tanger-estrecho.webp" alt="" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">01</span>
                     <div class="ambient-panel-label">Kasbah</div>
@@ -2647,7 +2649,7 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg" src="images/zoco-medina-tanger-especias-telas.webp"
-                    alt="">
+                    alt="" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">02</span>
                     <div class="ambient-panel-label">Especias</div>
@@ -2655,7 +2657,7 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/cafe-hafa-tanger-terraza-estrecho-gibraltar.webp" alt="">
+                    src="images/cafe-hafa-tanger-terraza-estrecho-gibraltar.webp" alt="" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">03</span>
                     <div class="ambient-panel-label">Kerouac</div>
@@ -2663,7 +2665,15 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/cap-spartel-acantilados-atlantico-mediterraneo.webp" alt="">
+                    src="images/souk-bara-tanger-marruecos-noche-cultura-turismo.webp" alt="" loading="lazy">
+                <div class="ambient-panel-ov"></div>
+                <div class="ambient-panel-ct"><span class="ambient-panel-num">04</span>
+                    <div class="ambient-panel-label">Centro</div>
+                    <h3 class="ambient-panel-title">Souk <em>Bara</em></h3>
+                </div>
+            </div>
+            <div class="ambient-panel"><img class="ambient-panel-bg"
+                    src="images/cap-spartel-acantilados-atlantico-mediterraneo.webp" alt="" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">05</span>
                     <div class="ambient-panel-label">Atlántico</div>
@@ -2671,11 +2681,19 @@
                 </div>
             </div>
             <div class="ambient-panel"><img class="ambient-panel-bg"
-                    src="images/grutas-hercules-abertura-mapa-africa-mar.webp" alt="">
+                    src="images/grutas-hercules-abertura-mapa-africa-mar.webp" alt="" loading="lazy">
                 <div class="ambient-panel-ov"></div>
                 <div class="ambient-panel-ct"><span class="ambient-panel-num">06</span>
                     <div class="ambient-panel-label">África</div>
                     <h3 class="ambient-panel-title"><em>Hércules</em></h3>
+                </div>
+            </div>
+            <div class="ambient-panel"><img class="ambient-panel-bg"
+                    src="images/marina-puerto-moderno-tanger-yates.webp" alt="" loading="lazy">
+                <div class="ambient-panel-ov"></div>
+                <div class="ambient-panel-ct"><span class="ambient-panel-num">07</span>
+                    <div class="ambient-panel-label">Puerto</div>
+                    <h3 class="ambient-panel-title">La <em>Marina</em></h3>
                 </div>
             </div>
         </div>
