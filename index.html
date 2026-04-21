@@ -501,11 +501,10 @@
       inset: 0;
       background: linear-gradient(135deg, rgba(12, 11, 9, .78) 0%, rgba(12, 11, 9, .2) 55%), linear-gradient(to top, rgba(12, 11, 9, .92) 0%, rgba(12, 11, 9, .15) 45%), linear-gradient(to right, rgba(12, 11, 9, .4) 0%, transparent 60%)
     }
-
-    .hi-1 { background-image: url("images/Faro-de-Cap-Spartel.webp") }
-    .hi-2 { background-image: url("images/hoteles-lujo-vista-mar-tanger.webp") }
-    .hi-3 { background-image: url("images/restaurantes-gastronomia-tanger-medina.webp") }
-    .hi-4 { background-image: url("images/riad-patio-interior-medina-tanger.webp") }
+.hi-1 { background-image: url("images/Faro-de-Cap-Spartel.webp") }
+.hi-2 { }
+.hi-3 { }
+.hi-4 { }
 
     .slide-counter {
       position: absolute;
@@ -1161,7 +1160,7 @@
       font-family: 'Jost', sans-serif;
       font-size: .5rem;
       letter-spacing: 3px;
-      color: var(--stone2)
+      color: var(--stone);
     }
 
     /* ===== COOKIE BANNER ===== */
@@ -1761,40 +1760,40 @@
   <div class="hero-wrapper" role="banner">
     <main id="heroMain">
       <article id="hero-1" class="hero-active" data-slide="1">
-        <div class="hero-info">
-          <p class="hero-kicker">Descubre la magia de</p>
-          <h1>Tánger</h1>
-          <p class="hero-sub">Donde el Mediterráneo se encuentra con el Atlántico</p>
-        </div>
-        <div class="hero-image hi-1" role="img"
-          aria-label="Faro de Cap Spartel en Tánger, punto donde se encuentran el Mediterráneo y el Atlántico"></div>
-      </article>
-      <article id="hero-2" data-slide="2">
-        <div class="hero-info">
-          <p class="hero-kicker">Alójate en los mejores</p>
-          <h2 class="hero-title">Hoteles</h2>
-          <p class="hero-sub">Hoteles de lujo, boutique y con vista al mar en Tánger</p>
-        </div>
-        <div class="hero-image hi-2" role="img" aria-label="Hotel de lujo con vista al mar en Tánger"></div>
-      </article>
-      <article id="hero-3" data-slide="3">
-        <div class="hero-info">
-          <p class="hero-kicker">Disfruta de los sabores de</p>
-          <h2 class="hero-title">Tánger</h2>
-          <p class="hero-sub">Los mejores restaurantes, mariscos y auténtica cocina marroquí</p>
-        </div>
-        <div class="hero-image hi-3" role="img"
-          aria-label="Restaurante y gastronomía tradicional en la Medina de Tánger"></div>
-      </article>
-      <article id="hero-4" data-slide="4">
-        <div class="hero-info">
-          <p class="hero-kicker">Vive la experiencia de los auténticos</p>
-          <h2 class="hero-title">Riads</h2>
-          <p class="hero-sub">Riads tradicionales y de lujo en el corazón de la Medina</p>
-        </div>
-        <div class="hero-image hi-4" role="img"
-          aria-label="Patio interior de un riad tradicional en la Medina de Tánger"></div>
-      </article>
+    <div class="hero-info">
+        <p class="hero-kicker">Descubre la magia de</p>
+        <h1>Tánger</h1>
+        <p class="hero-sub">Donde el Mediterráneo se encuentra con el Atlántico</p>
+    </div>
+    <div class="hero-image hi-1" role="img" aria-label="Faro de Cap Spartel en Tánger, punto donde se encuentran el Mediterráneo y el Atlántico"></div>
+</article>
+
+<article id="hero-2" data-slide="2">
+    <div class="hero-info">
+        <p class="hero-kicker">Alójate en los mejores</p>
+        <h2 class="hero-title">Hoteles</h2>
+        <p class="hero-sub">Hoteles de lujo, boutique y con vista al mar en Tánger</p>
+    </div>
+    <div class="hero-image hi-2" data-bg="images/hoteles-lujo-vista-mar-tanger.webp" role="img" aria-label="Hotel de lujo con vista al mar en Tánger"></div>
+</article>
+
+<article id="hero-3" data-slide="3">
+    <div class="hero-info">
+        <p class="hero-kicker">Disfruta de los sabores de</p>
+        <h2 class="hero-title">Tánger</h2>
+        <p class="hero-sub">Los mejores restaurantes, mariscos y auténtica cocina marroquí</p>
+    </div>
+    <div class="hero-image hi-3" data-bg="images/restaurantes-gastronomia-tanger-medina.webp" role="img" aria-label="Restaurante y gastronomía tradicional en la Medina de Tánger"></div>
+</article>
+
+<article id="hero-4" data-slide="4">
+    <div class="hero-info">
+        <p class="hero-kicker">Vive la experiencia de los auténticos</p>
+        <h2 class="hero-title">Riads</h2>
+        <p class="hero-sub">Riads tradicionales y de lujo en el corazón de la Medina</p>
+    </div>
+    <div class="hero-image hi-4" data-bg="images/riad-patio-interior-medina-tanger.webp" role="img" aria-label="Patio interior de un riad tradicional en la Medina de Tánger"></div>
+</article>
     </main>
     <div class="slide-counter">
       <div class="slide-dots">
@@ -2105,6 +2104,12 @@
   </noscript>
 
   <script>
+    /* LAZY LOAD HERO SLIDES */
+window.addEventListener('load', function() {
+    document.querySelectorAll('[data-bg]').forEach(function(el) {
+        el.style.backgroundImage = 'url(' + el.dataset.bg + ')';
+    });
+});
     /* ===== CUSTOM CURSOR ===== */
     (function () { var cD = document.getElementById('cDot'), cR = document.getElementById('cRing'); if (!cD || !matchMedia('(hover:hover)').matches) { if (cD) cD.style.display = 'none'; if (cR) cR.style.display = 'none'; return; } var mx = 0, my = 0, rx = 0, ry = 0; document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; cD.style.left = mx + 'px'; cD.style.top = my + 'px'; }); (function l() { rx += (mx - rx) * .12; ry += (my - ry) * .12; cR.style.left = rx + 'px'; cR.style.top = ry + 'px'; requestAnimationFrame(l); })(); document.querySelectorAll('a,button,.cat,.dot,.pb-logo,.stat-card,.testimonial-card,.editorial-card').forEach(function (el) { el.addEventListener('mouseenter', function () { document.body.classList.add('ch') }); el.addEventListener('mouseleave', function () { document.body.classList.remove('ch') }); }); })();
 
