@@ -1,11 +1,17 @@
 {
   "name": "Bed and Way",
   "short_name": "BedandWay",
+  "description": "Bed and Way \u2013 Your home along the way",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0C0C0C",
   "theme_color": "#0C0C0C",
   "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
     {
       "src": "/favicon-192x192.png",
       "sizes": "192x192",
@@ -16,11 +22,6 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
     }
   ]
 }
