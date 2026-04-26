@@ -1,35 +1,26 @@
 {
-  "name": "Bed & Way — Guía Tánger 2026",
-  "short_name": "Bed & Way",
-  "description": "Guía completa de Tánger: hoteles, riads, restaurantes y ferry. Verificada en destino.",
+  "name": "Bed and Way",
+  "short_name": "BedandWay",
   "start_url": "/",
-  "scope": "/",
-  "id": "/",
   "display": "standalone",
-  "orientation": "portrait-primary",
-  "theme_color": "#0c0b09",
-  "background_color": "#0c0b09",
-  "lang": "es",
-  "dir": "ltr",
-  "categories": ["travel", "tourism"],
+  "background_color": "#0C0C0C",
+  "theme_color": "#0C0C0C",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/favicon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "/android-chrome-maskable-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }
