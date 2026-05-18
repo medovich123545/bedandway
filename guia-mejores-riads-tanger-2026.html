@@ -2514,132 +2514,160 @@
             }
         }
 
-        @media(max-width:768px) {
-            .snav {
-                padding: 0 4vw
-            }
+      @media(max-width:768px) {
+    .snav {
+        padding: 0 4vw
+    }
 
-            .snav-links {
-                overflow-x: auto;
-                scrollbar-width: none
-            }
+    /* ✅ Cache le bouton Booking dans la nav sur mobile — il prend trop de place */
+    .nav-booking {
+        display: none
+    }
 
-            .snav-links::-webkit-scrollbar {
-                display: none
-            }
+    .snav-links {
+        overflow-x: auto;
+        scrollbar-width: none
+    }
 
-            .snav-link {
-                min-width: 70px;
-                padding: 14px 10px;
-                font-size: 7px
-            }
+    .snav-links::-webkit-scrollbar {
+        display: none
+    }
 
-            .hero h1 {
-                font-size: clamp(36px, 10vw, 58px)
-            }
+    .snav-link {
+        min-width: 70px;
+        padding: 14px 10px;
+        font-size: 7px
+    }
 
-            .tips-grid {
-                grid-template-columns: 1fr
-            }
+    .hero h1 {
+        font-size: clamp(36px, 10vw, 58px)
+    }
 
-            .int-grid {
-                grid-template-columns: 1fr
-            }
+    .tips-grid {
+        grid-template-columns: 1fr
+    }
 
-            .ft-inner {
-                grid-template-columns: 1fr;
-                gap: 2rem
-            }
+    .int-grid {
+        grid-template-columns: 1fr
+    }
 
-            .ft-bot {
-                flex-direction: column;
-                gap: .8rem;
-                text-align: center
-            }
+    .ft-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem
+    }
 
-            .breadcrumb {
-                padding: 10px 5vw;
-                font-size: .55rem
-            }
+    .ft-bot {
+        flex-direction: column;
+        gap: .8rem;
+        text-align: center
+    }
 
-            .finale-btns {
-                flex-direction: column;
-                align-items: center
-            }
+    .breadcrumb {
+        padding: 10px 5vw;
+        font-size: .55rem
+    }
 
-            .rc-btns {
-                flex-direction: column
-            }
+    .finale-btns {
+        flex-direction: column;
+        align-items: center
+    }
 
-            .cpc-menu {
-                grid-template-columns: 1fr;
-                width: 100vw;
-                top: auto;
-                bottom: 0;
-                height: 92vh;
-                border-radius: 18px 18px 0 0;
-                clip-path: inset(100% 0 0 0)
-            }
+    .rc-btns {
+        flex-direction: column
+    }
 
-            .cpc-menu.open {
-                clip-path: inset(0% 0 0 0)
-            }
+    /* ✅ Menu plein écran qui monte du bas */
+    .cpc-menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        width: 100vw;
+        top: auto;
+        bottom: 0;
+        height: 92vh;
+        border-radius: 18px 18px 0 0;
+        clip-path: inset(100% 0 0 0)
+    }
 
-            .cpc-menu-line {
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: auto;
-                height: 2px;
-                width: auto;
-                background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold) 70%, transparent)
-            }
+    .cpc-menu.open {
+        clip-path: inset(0% 0 0 0)
+    }
 
-            .cpc-menu-left {
-                border-right: none;
-                border-bottom: 1px solid rgba(184, 147, 90, .1)
-            }
+    .cpc-menu-line {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        height: 2px;
+        width: auto;
+        background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold) 70%, transparent)
+    }
 
-            .cpc-cats {
-                display: flex;
-                flex-direction: row;
-                overflow-x: auto;
-                padding: 0 1rem
-            }
+    .cpc-menu-left {
+        border-right: none;
+        border-bottom: 1px solid rgba(184, 147, 90, .1)
+    }
 
-            .cpc-cat {
-                flex-shrink: 0;
-                height: 52px;
-                padding: 0 18px;
-                border-bottom: none;
-                border-right: 1px solid rgba(184, 147, 90, .07);
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                gap: 2px
-            }
+    .cpc-cats {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 0 1rem
+    }
 
-            .cpc-cat::before {
-                display: none
-            }
+    .cpc-cat {
+        flex-shrink: 0;
+        height: 52px;
+        padding: 0 18px;
+        border-bottom: none;
+        border-right: 1px solid rgba(184, 147, 90, .07);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2px
+    }
 
-            .cpc-cat-arrow {
-                display: none
-            }
+    .cpc-cat::before {
+        display: none
+    }
 
-            .cpc-menu-foot {
-                display: none
-            }
+    .cpc-cat-arrow {
+        display: none
+    }
 
-           .cpc-sub{padding:1.6rem 1.4rem 6rem;-webkit-overflow-scrolling:touch;overflow-y:auto}
+    .cpc-menu-foot {
+        display: none
+    }
 
-            .cpc-close-btn {
-                top: 1rem;
-                right: 1rem;
-                width: 36px;
-                height: 36px
-            }
-        }
+    /* ✅ FIX CRITIQUE — panneau droit scrollable sur mobile */
+    .cpc-menu-right {
+        position: relative !important;
+        min-height: 40vh !important;
+        overflow: visible !important
+    }
+
+    .cpc-sub {
+        position: relative !important;
+        inset: auto !important;
+        opacity: 1 !important;
+        pointer-events: all !important;
+        transform: none !important;
+        padding: 1.6rem 1.4rem 6rem !important;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: auto
+    }
+
+    /* ✅ Cache les sous-menus inactifs */
+    .cpc-sub:not(.active) {
+        display: none !important
+    }
+
+    .cpc-close-btn {
+        top: 1rem;
+        right: 1rem;
+        width: 36px;
+        height: 36px
+    }
+}
     </style>
 </head>
 
