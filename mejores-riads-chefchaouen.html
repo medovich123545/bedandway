@@ -143,17 +143,35 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 .cpc-close-btn{top:1rem;right:1rem;width:36px;height:36px}
 }
 </style>
-<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/></head>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/>
+<style id="conversion-extra">
+.traveler-match,.zones{padding:6rem 0}.zones{background:#100f0d;border-block:1px solid rgba(255,255,255,.06)}
+.match-intro{max-width:760px;margin-top:1.2rem;font:.92rem/1.8 'Libre Baskerville';color:var(--muted)}
+.match-grid,.zone-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:2.4rem}
+.match-card,.zone-card{background:var(--ink2);padding:2rem}.match-card{display:flex;flex-direction:column;min-height:270px}
+.match-card small{font-size:.54rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold2)}
+.match-card h3,.zone-card h3{font:italic 1.6rem 'DM Serif Display';color:var(--sand);margin:.7rem 0}
+.match-card p,.zone-card li{font:.84rem/1.7 'Libre Baskerville';color:var(--muted)}
+.match-card strong{margin-top:auto;padding-top:1rem;font-size:.72rem;color:var(--sand2)}
+.match-link{margin-top:.9rem;font-size:.56rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold2)}
+.zone-num{font:italic 2.8rem 'DM Serif Display';color:rgba(184,147,90,.28)}.zone-card ul{list-style:none}
+.zone-card li{padding:.4rem 0}.zone-riads{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.08);font-size:.72rem;line-height:1.6;color:var(--sand2)}
+.booking-break{margin:1rem auto 6rem;max-width:1220px;padding:0 5vw}.booking-break-inner{border:1px solid rgba(184,147,90,.35);background:linear-gradient(135deg,rgba(184,147,90,.12),rgba(74,158,138,.06));padding:clamp(2rem,5vw,4rem)}
+.booking-break small{font-size:.55rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold2)}.booking-break h2{font:italic clamp(2rem,4vw,3.6rem)/1 'DM Serif Display';color:var(--sand);max-width:760px;margin:.8rem 0 1rem}
+.booking-break p{max-width:720px;font:.88rem/1.75 'Libre Baskerville';color:var(--muted)}.book-all{display:inline-flex;margin-top:1.5rem;background:#003580;color:#fff;padding:15px 22px;font-size:.6rem;letter-spacing:2px;text-transform:uppercase}
+@media(max-width:900px){.match-grid,.zone-grid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.match-grid,.zone-grid{grid-template-columns:1fr}.match-card{min-height:0}}
+</style>
+</head>
 <body>
 <div class="loader" id="loader"><span>Bed <em>&amp;</em> Way</span></div>
 <div class="progress" id="progress"></div>
 
 
 
-<div aria-modal="true" class="cpc-menu" id="cpcMenu" role="dialog"><div class="cpc-menu-line"></div><button aria-label="Cerrar menú" class="cpc-close-btn" id="cpcClose"><svg viewbox="0 0 12 12"><line x1="1" x2="11" y1="1" y2="11"></line><line x1="11" x2="1" y1="1" y2="11"></line></svg></button><div class="cpc-menu-left"><div class="cpc-menu-top"><p class="cpc-menu-eye">Bed &amp; Way · 2026</p><h2 class="cpc-menu-h">Explorar <em>Chefchaouen</em></h2></div><div class="cpc-cats"><div class="cpc-cat" data-cpc-sub="sub1"><span class="cpc-cat-num">01</span><span class="cpc-cat-label">Guides</span><span class="cpc-cat-arrow"></span></div><div class="cpc-cat active" data-cpc-sub="sub2"><span class="cpc-cat-num">02</span><span class="cpc-cat-label">Alojamiento</span><span class="cpc-cat-arrow"></span></div><div class="cpc-cat" data-cpc-sub="sub3"><span class="cpc-cat-num">03</span><span class="cpc-cat-label">Restaurants</span><span class="cpc-cat-arrow"></span></div><div class="cpc-cat" data-cpc-sub="sub4"><span class="cpc-cat-num">04</span><span class="cpc-cat-label">Transport</span><span class="cpc-cat-arrow"></span></div></div><div class="cpc-menu-foot"><a class="cpc-book-btn" href="https://www.booking.com/searchresults.html?ss=Chefchaouen%2C%20Morocco&amp;aid=304142&amp;label=bedandway-es-chefchaouen-riads-menu" rel="nofollow sponsored" target="_blank">Booking · Chefchaouen</a><p class="cpc-menu-copy">Bed &amp; Way · Norte de Marruecos</p></div></div><div class="cpc-menu-right"><div class="cpc-sub" id="sub1"><p class="cpc-sub-kicker">Chefchaouen</p><h3 class="cpc-sub-h">Guías de la <em>Ciudad Azul</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="chefchaouen.html">Guía principal</a><a class="cpc-sub-link" href="que-ver-en-chefchaouen-3-dias.html">Qué ver en 3 días</a><a class="cpc-sub-link" href="excursion-cascadas-akchour-guia-completa.html">Akchour</a></div></div><div class="cpc-sub active" id="sub2"><p class="cpc-sub-kicker">Dormir</p><h3 class="cpc-sub-h">Hoteles y <em>Riads</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="mejores-hoteles-chefchaouen.html">Mejores hoteles</a><a class="cpc-sub-link" href="mejores-riads-chefchaouen.html">Mejores riads<small>Esta página</small></a></div><div class="cpc-sub-cta"><a class="cpc-cta-a" href="https://www.booking.com/searchresults.html?ss=Chefchaouen%2C%20Morocco&amp;aid=304142&amp;label=bedandway-es-chefchaouen-riads-menu" rel="nofollow sponsored" target="_blank">Ver Booking</a></div></div><div class="cpc-sub" id="sub3"><p class="cpc-sub-kicker">Comer</p><h3 class="cpc-sub-h">Restaurantes en <em>Chefchaouen</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="donde-comer-chefchaouen-mejores-restaurantes.html">Dónde comer</a></div></div><div class="cpc-sub" id="sub4"><p class="cpc-sub-kicker">Moverse</p><h3 class="cpc-sub-h">Transporte <em>práctico</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="como-ir-de-tanger-a-chefchaouen.html">Tánger → Chefchaouen</a><a class="cpc-sub-link" href="alquiler-coches-seguro-tanger-2026.html">Alquiler de coche</a></div></div></div></div><div class="cpc-veil" id="cpcVeil"></div><nav class="snav" id="snav"><a href="index.html" style="font-family:'DM Serif Display',serif;font-style:italic;letter-spacing:2px;color:var(--sand)">Bed &amp; Way</a><div class="snav-links"><a class="snav-link active" href="#comparativa">Comparativa</a><a class="snav-link" href="#classement">Top 10</a><a class="snav-link" href="#guide-choix">Cómo elegir</a><a class="snav-link" href="#faq">FAQ</a></div><button aria-label="Menú" class="nav-burger" id="cpcBurger"><span></span><span></span><span></span></button></nav><section class="hero">
+<div aria-modal="true" class="cpc-menu" id="cpcMenu" role="dialog"><div class="cpc-menu-line"></div><button aria-label="Cerrar menú" class="cpc-close-btn" id="cpcClose"><svg viewbox="0 0 12 12"><line x1="1" x2="11" y1="1" y2="11"></line><line x1="11" x2="1" y1="1" y2="11"></line></svg></button><div class="cpc-menu-left"><div class="cpc-menu-top"><p class="cpc-menu-eye">Bed &amp; Way · 2026</p><h2 class="cpc-menu-h">Explorar <em>Chefchaouen</em></h2></div><div class="cpc-cats"><div class="cpc-cat" data-cpc-sub="sub1"><span class="cpc-cat-num">01</span><span class="cpc-cat-label">Guides</span><span class="cpc-cat-arrow"></span></div><div class="cpc-cat active" data-cpc-sub="sub2"><span class="cpc-cat-num">02</span><span class="cpc-cat-label">Alojamiento</span><span class="cpc-cat-arrow"></span></div><div class="cpc-cat" data-cpc-sub="sub3"><span class="cpc-cat-num">03</span><span class="cpc-cat-label">Restaurants</span><span class="cpc-cat-arrow"></span></div><div class="cpc-cat" data-cpc-sub="sub4"><span class="cpc-cat-num">04</span><span class="cpc-cat-label">Transport</span><span class="cpc-cat-arrow"></span></div></div><div class="cpc-menu-foot"><a class="cpc-book-btn" href="https://www.booking.com/searchresults.html?ss=Chefchaouen%2C%20Morocco&amp;aid=304142&amp;label=bedandway-es-chefchaouen-riads-menu" rel="nofollow sponsored noopener" target="_blank">Booking · Chefchaouen</a><p class="cpc-menu-copy">Bed &amp; Way · Norte de Marruecos</p></div></div><div class="cpc-menu-right"><div class="cpc-sub" id="sub1"><p class="cpc-sub-kicker">Chefchaouen</p><h3 class="cpc-sub-h">Guías de la <em>Ciudad Azul</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="chefchaouen.html">Guía principal</a><a class="cpc-sub-link" href="que-ver-en-chefchaouen-3-dias.html">Qué ver en 3 días</a><a class="cpc-sub-link" href="excursion-cascadas-akchour-guia-completa.html">Akchour</a></div></div><div class="cpc-sub active" id="sub2"><p class="cpc-sub-kicker">Dormir</p><h3 class="cpc-sub-h">Hoteles y <em>Riads</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="mejores-hoteles-chefchaouen.html">Mejores hoteles</a><a class="cpc-sub-link" href="mejores-riads-chefchaouen.html">Mejores riads<small>Esta página</small></a></div><div class="cpc-sub-cta"><a class="cpc-cta-a" href="https://www.booking.com/searchresults.html?ss=Chefchaouen%2C%20Morocco&amp;aid=304142&amp;label=bedandway-es-chefchaouen-riads-menu" rel="nofollow sponsored noopener" target="_blank">Ver Booking</a></div></div><div class="cpc-sub" id="sub3"><p class="cpc-sub-kicker">Comer</p><h3 class="cpc-sub-h">Restaurantes en <em>Chefchaouen</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="donde-comer-chefchaouen-mejores-restaurantes.html">Dónde comer</a></div></div><div class="cpc-sub" id="sub4"><p class="cpc-sub-kicker">Moverse</p><h3 class="cpc-sub-h">Transporte <em>práctico</em></h3><div class="cpc-sub-links"><a class="cpc-sub-link" href="como-ir-de-tanger-a-chefchaouen.html">Tánger → Chefchaouen</a><a class="cpc-sub-link" href="alquiler-coches-seguro-tanger-2026.html">Alquiler de coche</a></div></div></div></div><div class="cpc-veil" id="cpcVeil"></div><nav class="snav" id="snav"><a href="index.html" style="font-family:'DM Serif Display',serif;font-style:italic;letter-spacing:2px;color:var(--sand)">Bed &amp; Way</a><div class="snav-links"><a class="snav-link active" href="#comparativa">Comparativa</a><a class="snav-link" href="#classement">Top 10</a><a class="snav-link" href="#guide-choix">Cómo elegir</a><a class="snav-link" href="#faq">FAQ</a></div><button aria-label="Menú" class="nav-burger" id="cpcBurger"><span></span><span></span><span></span></button></nav><section class="hero">
 <div class="hero-slide active"><img alt="Riad en la medina azul de Chefchaouen" fetchpriority="high" height="1280" src="images/mejores-riads-chefchaouen-hero-medina.webp" width="1920"/></div>
-<div class="hero-slide"><img alt="Terraza de riad con vista sobre Chefchaouen" height="1280" src="images/riad-chefchaouen-terraza-vista-ciudad-azul.webp" width="1920"/></div>
-<div class="hero-slide"><img alt="Patio marroquí en un riad de Chefchaouen" height="1280" src="images/riad-chefchaouen-patio-marroqui-premium.webp" width="1920"/></div>
+<div class="hero-slide"><img alt="Terraza de riad con vista sobre Chefchaouen" height="1280" src="images/riad-chefchaouen-terrasse-petit-dejeuner.webp" width="1920"/></div>
+<div class="hero-slide"><img alt="Patio marroquí en un riad de Chefchaouen" height="1280" src="images/riad-patio-interior-medina-tanger.webp" width="1920"/></div>
 <div class="hero-copy">
 <div class="eyebrow">CHEFCHAOUEN · DÓNDE DORMIR · 2026</div>
 <h1>Los 10 mejores <em>riads</em><br/>Chefchaouen</h1>
@@ -206,6 +224,28 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 </table></div>
 </div>
 </section>
+
+<section class="traveler-match wrap" id="segun-viaje">
+<h2 class="section-h">¿Qué riad elegir según tu viaje?</h2>
+<p class="match-intro">No existe un único alojamiento perfecto para todo el mundo. Empieza por tu prioridad real y ve directamente a las opciones que mejor encajan con tu estancia.</p>
+<div class="match-grid">
+<article class="match-card"><small>Pareja · escapada especial</small><h3>Spa y ambiente romántico</h3><p>Compara primero estas opciones si quieres que el alojamiento forme parte de la experiencia.</p><strong>Lina Ryad &amp; Spa · Riad Cherifa</strong><a class="match-link" href="#lina-ryad-spa">Comparar opciones →</a></article>
+<article class="match-card"><small>Panorámica · fotografía</small><h3>Quiero las mejores vistas</h3><p>Ganas panorámica sobre la ciudad azul, pero debes aceptar más escaleras y desplazamiento a pie.</p><strong>Dar Jasmine · Dar Echchaouen</strong><a class="match-link" href="#dar-jasmine">Ver alojamientos →</a></article>
+<article class="match-card"><small>Presupuesto</small><h3>Quiero controlar el gasto</h3><p>Prioriza ubicación y experiencia antes que servicios premium y comprueba el precio real para tus fechas.</p><strong>Casa Sabila · Riad Zaitouna</strong><a class="match-link" href="#casa-sabila">Ver opciones →</a></article>
+<article class="match-card"><small>Primera visita</small><h3>Quiero moverme principalmente a pie</h3><p>Una dirección céntrica simplifica una estancia corta y permite volver fácilmente al alojamiento.</p><strong>Casa Hassan · Riad Hicham</strong><a class="match-link" href="#casa-hassan">Ver opciones →</a></article>
+<article class="match-card"><small>Familia · tranquilidad</small><h3>Quiero más espacio y calma</h3><p>El borde de la medina puede ofrecer un buen compromiso entre cercanía, vistas y tranquilidad.</p><strong>Dar Echchaouen</strong><a class="match-link" href="#dar-echchaouen">Ver la ficha →</a></article>
+<article class="match-card"><small>Inmersión</small><h3>Quiero dormir dentro de la medina</h3><p>Ideal si tu prioridad es salir directamente a las calles de Chefchaouen. A cambio, el acceso en coche puede ser limitado.</p><strong>Lina · Casa Hassan · Zaitouna</strong><a class="match-link" href="#lina-ryad-spa">Explorar →</a></article>
+</div></section>
+
+<section class="zones" id="zonas"><div class="wrap">
+<h2 class="section-h">Medina, Ras El Ma o las alturas: ¿dónde dormir?</h2>
+<p class="match-intro">Chefchaouen está construida sobre una ladera. La zona influye en las vistas, las caminatas con equipaje y la facilidad para entrar y salir.</p>
+<div class="zone-grid">
+<article class="zone-card"><span class="zone-num">01</span><h3>Medina</h3><ul><li>Calles azules nada más salir</li><li>Ideal para recorrer el centro a pie</li><li>Acceso directo en coche limitado en muchos puntos</li></ul><p class="zone-riads">Lina Ryad &amp; Spa, Riad Cherifa, Casa Sabila, Casa Hassan, Dar Meziana, Riad Gharnata, Riad Zaitouna y Riad Hicham.</p></article>
+<article class="zone-card"><span class="zone-num">02</span><h3>Ras El Ma · borde de medina</h3><ul><li>Buen compromiso entre centro y tranquilidad</li><li>Interesante para vistas y espacios exteriores</li><li>Comprueba el acceso exacto con equipaje</li></ul><p class="zone-riads">En esta selección: Dar Echchaouen.</p></article>
+<article class="zone-card"><span class="zone-num">03</span><h3>Alturas</h3><ul><li>Panorámicas más amplias</li><li>Ambiente más apartado del centro</li><li>Más escaleras: importante con maletas o movilidad reducida</li></ul><p class="zone-riads">En esta selección: Dar Jasmine.</p></article>
+</div></div></section>
+
 <section class="ranking wrap" id="classement">
 <div class="ranking-head"><h2 class="section-h">Los 10 alojamientos en detalle</h2><p>Cada ficha explica el perfil real del alojamiento: qué hace mejor que los demás, para quién funciona y qué compromiso implica.</p></div>
 <section class="riad-card reveal" id="lina-ryad-spa">
@@ -213,7 +253,6 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <div class="riad-gallery">
 <figure class="g-main frame"><img alt="Lina Ryad &amp; Spa — habitación y decoración interior" height="1500" loading="lazy" src="images/lina-ryad-spa-chefchaouen-chambre-premium.webp" width="1200"/></figure>
 <figure class="g-side frame"><img alt="Lina Ryad &amp; Spa — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/lina-ryad-spa-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Spa y confort</span><span>€€€€</span></div>
@@ -235,8 +274,7 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <div class="rank-badge">#02</div>
 <div class="riad-gallery">
 <figure class="g-main frame"><img alt="Riad Cherifa — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-cherifa-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Riad Cherifa — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-cherifa-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-side frame"><img alt="Riad Cherifa — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-cherifa-chefchaouen-vue-patio.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Encanto y piscina</span><span>€€€€</span></div>
@@ -257,9 +295,8 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <section class="riad-card reveal" id="dar-jasmine">
 <div class="rank-badge">#03</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Dar Jasmine — habitación y decoración interior" height="1500" loading="lazy" src="images/dar-jasmine-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Dar Jasmine — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/dar-jasmine-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-main frame"><img alt="Dar Jasmine — habitación y decoración interior" height="1500" loading="lazy" src="images/dar-jasmine-chefchaouen-terasse.webp" width="1200"/></figure>
+<figure class="g-side frame"><img alt="Dar Jasmine — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/dar-jasmine-chefchaouen-piscine.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Vista panorámica</span><span>€€€€</span></div>
@@ -280,9 +317,8 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <section class="riad-card reveal" id="dar-echchaouen">
 <div class="rank-badge">#04</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Dar Echchaouen — habitación y decoración interior" height="1500" loading="lazy" src="images/dar-echchaouen-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Dar Echchaouen — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/dar-echchaouen-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-main frame"><img alt="Dar Echchaouen — habitación y decoración interior" height="1500" loading="lazy" src="images/dar-echchaouen-chefchaouen-vue-panoramique.webp" width="1200"/></figure>
+<figure class="g-side frame"><img alt="Dar Echchaouen — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/dar-echchaouen-chefchaouen-terasse.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Vistas y espacio</span><span>€€€</span></div>
@@ -304,8 +340,7 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <div class="rank-badge">#05</div>
 <div class="riad-gallery">
 <figure class="g-main frame"><img alt="Casa Sabila — habitación y decoración interior" height="1500" loading="lazy" src="images/casa-sabila-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Casa Sabila — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/casa-sabila-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-side frame"><img alt="Casa Sabila — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/casa-sabila-chefchaouen-entrée.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Mejor relación calidad-precio</span><span>€€</span></div>
@@ -323,12 +358,18 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 </div>
 </div>
 </section>
+
+<section class="booking-break"><div class="booking-break-inner">
+<small>¿Ya tienes tus fechas?</small><h2>Comprueba qué alojamientos están disponibles para tu estancia.</h2>
+<p>La disponibilidad y los precios cambian según las fechas, el tipo de habitación y las condiciones de cancelación. Compara las opciones disponibles antes de decidir.</p>
+<a class="book-all" href="https://www.booking.com/searchresults.html?ss=Chefchaouen%2C%20Morocco&amp;aid=304142&amp;label=bedandway-es-chefchaouen-riads-midpage" rel="nofollow sponsored noopener" target="_blank">Ver disponibilidad en Booking ↗</a>
+</div></section>
+
 <section class="riad-card reveal" id="casa-hassan">
 <div class="rank-badge">#06</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Casa Hassan — habitación y decoración interior" height="1500" loading="lazy" src="images/casa-hassan-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Casa Hassan — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/casa-hassan-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-main frame"><img alt="Casa Hassan — habitación y decoración interior" height="1500" loading="lazy" src="images/casa-hassan-chefchaouen-hall.webp" width="1200"/></figure>
+<figure class="g-side frame"><img alt="Casa Hassan — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/casa-hassan-chefchaouen-restaurant.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Tradición y ubicación</span><span>€€€</span></div>
@@ -349,9 +390,8 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <section class="riad-card reveal" id="dar-meziana">
 <div class="rank-badge">#07</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Dar Meziana — habitación y decoración interior" height="1500" loading="lazy" src="images/dar-meziana-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Dar Meziana — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/dar-meziana-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-main frame"><img alt="Dar Meziana — habitación y decoración interior" height="1500" loading="lazy" src="images/dar-meziana-chefchaouen.webp" width="1200"/></figure>
+<figure class="g-side frame"><img alt="Dar Meziana — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/dar-meziana-chefchaouen-fontaine.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Auténtico y acogedor</span><span>€€€</span></div>
@@ -372,9 +412,8 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <section class="riad-card reveal" id="riad-gharnata">
 <div class="rank-badge">#08</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Riad Gharnata — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-gharnata-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Riad Gharnata — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-gharnata-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-main frame"><img alt="Riad Gharnata — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-gharnata-chefchaouen.webp" width="1200"/></figure>
+<figure class="g-side frame"><img alt="Riad Gharnata — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-gharnata-chefchaouen-hall.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Terraza y hammam</span><span>€€</span></div>
@@ -395,9 +434,8 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <section class="riad-card reveal" id="riad-zaitouna">
 <div class="rank-badge">#09</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Riad Zaitouna Chaouen — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-zaitouna-chefchaouen-chambre-premium.webp" width="1200"/></figure>
-<figure class="g-side frame"><img alt="Riad Zaitouna Chaouen — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-zaitouna-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
+<figure class="g-main frame"><img alt="Riad Zaitouna Chaouen — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-zaitouna-chefchaouen.webp" width="1200"/></figure>
+<figure class="g-side frame"><img alt="Riad Zaitouna Chaouen — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-zaitouna-chefchaouen-chambre-premium.webp" width="1200"/></figure>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>Presupuesto y ubicación</span><span>€€</span></div>
@@ -418,9 +456,8 @@ footer{padding:4rem 5vw 3rem;border-top:1px solid var(--line);background:#080807
 <section class="riad-card reveal" id="riad-hicham">
 <div class="rank-badge">#10</div>
 <div class="riad-gallery">
-<figure class="g-main frame"><img alt="Riad Hicham — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-hicham-chefchaouen-chambre-premium.webp" width="1200"/></figure>
+<figure class="g-main frame"><img alt="Riad Hicham — habitación y decoración interior" height="1500" loading="lazy" src="images/riad-hicham-chefchaouen.webp" width="1200"/></figure>
 <figure class="g-side frame"><img alt="Riad Hicham — terraza y ambiente en Chefchaouen" height="800" loading="lazy" src="images/riad-hicham-chefchaouen-terrasse-ambiance.webp" width="1200"/></figure>
-<span class="photo-note">Nuevas imágenes por crear</span>
 </div>
 <div class="riad-content">
 <div class="card-topline"><span>En pleno centro</span><span>€€</span></div>
@@ -491,19 +528,19 @@ dots.forEach((d,i)=>d.onclick=()=>{slides[n].classList.remove('active');dots[n].
 IMAGE PRODUCTION LIST — ALL VISUALS BELOW ARE NEW TO CREATE
 Hero:
 1. images/mejores-riads-chefchaouen-hero-medina.webp
-2. images/riad-chefchaouen-terraza-vista-ciudad-azul.webp
-3. images/riad-chefchaouen-patio-marroqui-premium.webp
+2. images/riad-chefchaouen-terrasse-petit-dejeuner.webp
+3. images/riad-patio-interior-medina-tanger.webp
 Per property: 2 images each (room/interior + terrace/ambience)
 1. images/lina-ryad-spa-chefchaouen-chambre-premium.webp | images/lina-ryad-spa-chefchaouen-terrasse-ambiance.webp
-2. images/riad-cherifa-chefchaouen-chambre-premium.webp | images/riad-cherifa-chefchaouen-terrasse-ambiance.webp
-3. images/dar-jasmine-chefchaouen-chambre-premium.webp | images/dar-jasmine-chefchaouen-terrasse-ambiance.webp
-4. images/dar-echchaouen-chefchaouen-chambre-premium.webp | images/dar-echchaouen-chefchaouen-terrasse-ambiance.webp
-5. images/casa-sabila-chefchaouen-chambre-premium.webp | images/casa-sabila-chefchaouen-terrasse-ambiance.webp
-6. images/casa-hassan-chefchaouen-chambre-premium.webp | images/casa-hassan-chefchaouen-terrasse-ambiance.webp
-7. images/dar-meziana-chefchaouen-chambre-premium.webp | images/dar-meziana-chefchaouen-terrasse-ambiance.webp
-8. images/riad-gharnata-chefchaouen-chambre-premium.webp | images/riad-gharnata-chefchaouen-terrasse-ambiance.webp
-9. images/riad-zaitouna-chefchaouen-chambre-premium.webp | images/riad-zaitouna-chefchaouen-terrasse-ambiance.webp
-10. images/riad-hicham-chefchaouen-chambre-premium.webp | images/riad-hicham-chefchaouen-terrasse-ambiance.webp
+2. images/riad-cherifa-chefchaouen-chambre-premium.webp | images/riad-cherifa-chefchaouen-vue-patio.webp
+3. images/dar-jasmine-chefchaouen-terasse.webp | images/dar-jasmine-chefchaouen-piscine.webp
+4. images/dar-echchaouen-chefchaouen-vue-panoramique.webp | images/dar-echchaouen-chefchaouen-terasse.webp
+5. images/casa-sabila-chefchaouen-chambre-premium.webp | images/casa-sabila-chefchaouen-entrée.webp
+6. images/casa-hassan-chefchaouen-hall.webp | images/casa-hassan-chefchaouen-restaurant.webp
+7. images/dar-meziana-chefchaouen.webp | images/dar-meziana-chefchaouen-fontaine.webp
+8. images/riad-gharnata-chefchaouen.webp | images/riad-gharnata-chefchaouen-hall.webp
+9. images/riad-zaitouna-chefchaouen.webp | images/riad-zaitouna-chefchaouen.webp
+10. images/riad-hicham-chefchaouen.webp | images/riad-hicham-chefchaouen-terrasse-ambiance.webp
 -->
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
